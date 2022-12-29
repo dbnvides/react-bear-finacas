@@ -1,0 +1,6 @@
+.btn-default {
+    padding: 13px 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}

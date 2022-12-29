@@ -1,0 +1,33 @@
+.card-money {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 363px;
+    min-width: 320px;
+    height: 96px;
+    background: var(--fixed-white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.card-money>div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+}
+
+.card-money>span {
+    font-size: var(--font-title-3);
+    font-weight: var(--bold);
+}
+
+.card-money>div h3 {
+    font-size: var(--font-title-3);
+    font-weight: var(--bold);
+}
+
+.card-money>div p {
+    font-size: var(--font-body);
+}

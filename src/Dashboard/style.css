@@ -1,0 +1,65 @@
+.App-dashboard {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.App-header {
+    height: 80px;
+    background-color: var(--fixed-white);
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.main-dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    height: 100%;
+}
+
+.section-formulary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    max-height: 100%;
+}
+
+.section-list {
+    width: 55%;
+    height: 100%;
+}
+
+.main-box {
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .main-dashboard {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .section-formulary {
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-list {
+        width: 100%;
+    }
+
+    .App-dashboard {
+        min-height: 100vh;
+        height: max-content;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-box {
+        position: relative;
+        left: -20px;
+        width: 262px;
+    }
+}

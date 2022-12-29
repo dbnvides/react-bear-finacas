@@ -1,0 +1,76 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    min-height: 87px;
+    background-color: var(--fixed-white);
+    position: relative;
+    border-radius: 4px 4px 4px 4px;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.color-green {
+    background-color: var(--green);
+}
+
+.color-red {
+    background-color: var(--red);
+}
+
+.rectangle {
+    width: 8px;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.box-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.box-secundary {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.box-secundary>span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-trash {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../../public/ButtonTrash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 4px;
+    background-color: #E9ECEF;
+}
+
+.btn-trash:hover {
+    width: 32px;
+    height: 32px;
+    background-image: url('../../../public/ButtonTrashHover.png');
+    background-color: var(--grey-3);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: none;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
